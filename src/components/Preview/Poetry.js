@@ -5,7 +5,7 @@ const Wrapper = styled.article`
   font-family: SimSun, FangSong, STSong, STZhongsong, LiSu, KaiTi, 'Microsoft YaHei';
   position: absolute;
   left: 50%;
-  top: 9rem;
+  top: 16rem;
   transform: translateX(-50%);
   min-width: 6rem;
   white-space: nowrap;
