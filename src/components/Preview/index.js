@@ -52,7 +52,7 @@ const Wrapper = styled.section`
     position: absolute;
     left: 0;
     bottom: 0;
-    font-size: 300%;
+    font-size: 250%;
     margin-left: 2rem;
     margin-bottom: 3rem;
     font-family: 'TChinese', 'SimSun', 'FangSong', 'STSong', 'STZhongsong', 'LiSu', 'KaiTi',
