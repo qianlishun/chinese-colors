@@ -5,7 +5,7 @@ const Wrapper = styled.article`
   font-family: SimSun, FangSong, STSong, STZhongsong, LiSu, KaiTi, 'Microsoft YaHei';
   position: absolute;
   left: 50%;
-  top: 9rem;
+  top: 23rem;
   transform: translateX(-50%);
   min-width: 6rem;
   white-space: nowrap;
@@ -13,6 +13,7 @@ const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  cursor: move;
   background: ${({ bgRgb }) => `rgba(${bgRgb.join(',')},.5)`};
   padding: 0.8rem 1.2rem;
 
@@ -42,7 +43,7 @@ export default function Poetry({ bgColor, bgRgb }) {
   const currPoetry = JSON.parse(localStorage.getItem('POETRY'));
   const { author, title, content } = currPoetry;
   return (
-    <Wrapper contentEditable={true} style={{ color: bgColor }} bgRgb={bgRgb}>
+    <Wrapper id='drag' contentEditable={true} style={{ color: bgColor }} bgRgb={bgRgb}>
       {content.map(line => {
         return (
           <p key={line} className="line">

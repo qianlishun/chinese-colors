@@ -1,0 +1,150 @@
+
+
+    * {
+        margin: 0;
+        padding: 0;
+      }
+      .wrap {
+        background: #000000;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.8;
+        position: relative;
+      }
+    
+      @keyframes moonflashing {
+        0% {
+          filter: brightness(0.8);
+        }
+        50% {
+          filter: brightness(1.3);
+        }
+        100% {
+          filter: brightness(0.8);
+        }
+      }
+      @keyframes starflashing {
+        0% {
+          filter: brightness(0.3);
+        }
+        50% {
+          filter: brightness(1);
+        }
+        100% {
+          filter: brightness(0.3);
+        }
+      }
+      .star {
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background: #ffffff;
+        position: absolute;
+        animation: starflashing 2s infinite;
+      }
+      .star1 {
+        top: 50%;
+        right: 20%;
+      }
+      .star2 {
+        top: 70%;
+        right: 30%;
+      }
+      .star3 {
+        top: 40%;
+        left: 20%;
+      }
+      .star4 {
+        top: 60%;
+        right: 10%;
+      }
+      .star5 {
+        top: 55%;
+        right: 44%;
+      }
+      .star6 {
+        top: 10%;
+        left: 30%;
+      }
+      .star7 {
+        top: 15%;
+        left: 20%;
+      }
+    
+      .meteor {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        opacity: 1;
+        border-radius: 40%;
+        /* border: 0px solid #fff; */
+        /* border-color: transparent transparent transparent */
+        /* rgba(255, 255, 255, 0.3); */
+        box-shadow: 0 0 5px 5px #636262;
+       
+      }
+      .meteor:after {
+        content: "";
+        display: block;
+        border: 0px solid #fff;
+        border-color: transparent transparent transparent
+          rgba(234, 173, 109, 0.247);
+        border-width: 2px 100px;
+        transform: rotate(-45deg) translate3d(1px, 1px, 0);
+        transform-origin: 0% 0%;
+       
+      }
+      .meteor1 {
+        top: 2vh;
+        left: 30vw;
+        opacity: 1.0;
+        background:rgba(234, 173, 109, 0.247);
+        transform: scale(1.1) translate3d(10px, 200px, 0);
+        /* animation: meteorflashing 2s infinite linear 1s; */
+      }
+      .meteor2 {
+        top: 22vh;
+        left: 80vw;
+        background:rgba(234, 173, 109, 0.247);
+        opacity: 1.0;
+        transform: scale(1.2) translate3d(0px, 200px, 0);
+      }
+      .meteor3 {
+        top: 30vh;
+        left: 40vw;
+        opacity: 1.0;
+        background:rgba(234, 173, 109, 0.247);
+        transform: scale(2.0) translate3d(50px, 350px, 0);
+        /* animation: meteorflashing 3s infinite linear 2s; */
+      }
+      .meteor4 {
+        top: 10vh;
+        left: 0vw;
+        opacity: 1.0;
+        background:rgba(234, 173, 109, 0.247);
+        transform: scale(1.1) translate3d(70px, 450px, 0);/* animation: meteorflashing 3s infinite linear 1s; */
+      }
+      .meteor5 {
+        top: 50vh;
+        left: 2vw;
+        opacity: 1.0;
+        background:rgba(234, 173, 109, 0.247);
+        transform: scale(1.2) translate3d(200px, 200px, 0);
+        /* animation: meteorflashing 3s infinite linear 3s; */
+      }
+      
+
+  <div class="wrap">
+  <div class="star star1"></div>
+  <div class="star star2"></div>
+  <div class="star star3"></div>
+  <div class="star star4"></div>
+  <div class="star star5"></div>
+  <div class="star star6"></div>
+  <div class="star star7"></div>
+  <div class="meteor meteor1"></div>
+  <div class="meteor meteor2"></div>
+  <div class="meteor meteor3"></div>
+  <div class="meteor meteor4"></div>
+  <div class="meteor meteor5"></div>
+</div>
